@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="controllers.WelcomeSceneController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Button id="UserBtn" fx:id="loginBtn" layoutX="595.0" layoutY="219.0" mnemonicParsing="false" onAction="#showChatScene" prefWidth="83.0" text="Login" />
+    <Button fx:id="serverBtn" layoutX="281.0" layoutY="248.0" mnemonicParsing="false" onAction="#showServerScene" prefWidth="83.0" text="Server" />
+    <TextField id="usernameTextField" fx:id="usernameTextField" layoutX="281.0" layoutY="218.0" prefWidth="139.0" promptText="Username" />
+    <Label layoutX="205.0" layoutY="221.0" text="Chat -------&gt;" />
+    <Label layoutX="205.0" layoutY="250.0" text="Host a -----&gt;" />
+    <TextField layoutX="438.0" layoutY="218.0" prefWidth="139.0" promptText="IP address + port" />
+  </children>
+</AnchorPane>

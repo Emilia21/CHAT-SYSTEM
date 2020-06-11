@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="controllers.ServerSceneController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Label fx:id="serverLabel" layoutX="359.0" layoutY="28.0" text="Server">
+      <font>
+        <Font size="30.0" />
+      </font>
+    </Label>
+    <Label layoutX="279.0" layoutY="80.0" prefWidth="83.0" text="Server IP:" textFill="#cc0000">
+      <font>
+        <Font name="System Bold" size="18.0" />
+      </font>
+    </Label>
+    <TextField fx:id="ipTextField" disable="false" editable="false" layoutX="362.0" layoutY="81.0" prefWidth="200.0" style="-fx-text-inner-color: green;&#10;-fx-text-box-border: transparent;&#10;-fx-focus-color: transparent;" text="10.10.10.10:3444" />
+    <ListView fx:id="loggedUsersListView" layoutX="14.0" layoutY="149.0" prefHeight="437.0" prefWidth="772.0" />
+    <Label layoutX="14.0" layoutY="125.0" prefWidth="117.0" text="Logged Users" />
+    <Button id="btn" layoutX="550.0" layoutY="48.0" mnemonicParsing="false" onAction="#messageAllNow" text="Button" />
+  </children>
+</AnchorPane>
